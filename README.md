@@ -287,31 +287,31 @@ Admin-specific routes are available under:
 
 ### Home Page
 
-![Home Page](images/home.png)
+![Home Page](screenshots/home.png)
 
 ### About Page
 
-![About Page](images/about.png)
+![About Page](screenshots/about.png)
 
 ### Events Page
 
-![Events Page](images/events.png)
+![Events Page](screenshots/events.png)
 
 ### Login Page
 
-![Login Page](images/login.png)
+![Login Page](screenshots/login.png)
 
 ### Contact Page
 
-![Contact Page](images/contact.png)
+![Contact Page](screenshots/contact.png)
 
 ### Admin Dashboard
 
-![Admin Dashboard](images/admin-dashboard.png)
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ### Student Registrations
 
-![Student Registrations](images/student-registrations.png)
+![Student Registrations](screenshots/student-registrations.png)
 
 ---
 
