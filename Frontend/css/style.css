@@ -669,3 +669,293 @@ footer p {
     }
 
 }
+/* =========================================
+   PAGE CONTENT LAYOUT
+========================================= */
+
+.page-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* HOME HERO */
+
+.hero {
+    width: 90%;
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 60px 40px;
+
+    background: white;
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 18px;
+    color: #1e3a8a;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    background: #475569;
+}
+
+.btn-secondary:hover {
+    background: #334155;
+}
+
+
+/* ABOUT PAGE */
+
+.about-container {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 40px auto;
+}
+
+.about-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 25px;
+}
+
+.about-card h2 {
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #475569;
+    line-height: 1.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 35px 20px;
+        margin: 25px auto;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .about-card {
+        padding: 22px;
+    }
+
+}
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto 50px;
+}
+
+
+/* ---------- SECTION HEADING ---------- */
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+
+/* ---------- FEATURE GRID ---------- */
+
+.home-features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ---------- FEATURE CARD ---------- */
+
+.feature-card {
+    background: white;
+
+    padding: 28px 22px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.07);
+
+    text-align: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.11);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+}
+
+.feature-card h3 {
+    color: #1e3a8a;
+
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- HOME CTA ---------- */
+
+.home-cta {
+    margin-top: 50px;
+
+    padding: 45px 30px;
+
+    background: #1e3a8a;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+.home-cta h2 {
+    color: white;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.home-cta p {
+    color: #dbeafe;
+
+    max-width: 650px;
+
+    margin: 0 auto 22px;
+}
+
+.home-cta .btn {
+    background: white;
+
+    color: #1e3a8a;
+}
+
+.home-cta .btn:hover {
+    background: #f1f5f9;
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .home-features {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 550px) {
+
+    .home-features {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .home-cta {
+        padding: 35px 20px;
+    }
+
+    .home-cta h2 {
+        font-size: 24px;
+    }
+
+}
