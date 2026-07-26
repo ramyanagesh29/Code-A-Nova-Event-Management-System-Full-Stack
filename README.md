@@ -128,7 +128,7 @@ Event-Management-System/
 │   ├── dashboard.html
 │   └── student-dashboard.html
 │
-├── images/
+├
 ├── screenshots/
 ├── .gitignore
 └── README.md
