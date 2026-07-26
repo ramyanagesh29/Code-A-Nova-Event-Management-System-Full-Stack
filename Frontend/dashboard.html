@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | Event Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<h1>Admin Dashboard</h1>
+
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="events.html">Events</a>
+
+    <a href="dashboard.html">Dashboard</a>
+
+    <button type="button" id="logoutButton">
+        Logout
+    </button>
+
+</nav>
+
+
+<main>
+
+<section class="admin-dashboard">
+
+
+    <h2>
+        Welcome,
+        <span id="adminName">Admin</span>
+    </h2>
+
+    <p>
+        Manage events and monitor student registrations.
+    </p>
+
+
+    <!-- DASHBOARD STATISTICS -->
+
+    <div class="dashboard-summary">
+
+        <div class="summary-card">
+
+            <h3>Students</h3>
+
+            <h2 id="totalStudents">
+                0
+            </h2>
+
+        </div>
+
+
+        <div class="summary-card">
+
+            <h3>Events</h3>
+
+            <h2 id="totalEvents">
+                0
+            </h2>
+
+        </div>
+
+
+        <div class="summary-card">
+
+            <h3>Active Registrations</h3>
+
+            <h2 id="totalRegistrations">
+                0
+            </h2>
+
+        </div>
+
+
+        <div class="summary-card">
+
+            <h3>Cancelled</h3>
+
+            <h2 id="cancelledRegistrations">
+                0
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- EVENT MANAGEMENT -->
+
+    <section>
+
+        <h2>Manage Events</h2>
+
+        <button
+            type="button"
+            id="showEventFormButton"
+        >
+            + Add New Event
+        </button>
+
+
+        <form
+            id="eventForm"
+            style="display: none;"
+        >
+
+            <input
+                type="hidden"
+                id="eventId"
+            >
+
+
+            <input
+                type="text"
+                id="eventTitle"
+                placeholder="Event Title"
+                required
+            >
+
+
+            <textarea
+                id="eventDescription"
+                placeholder="Event Description"
+                required
+            ></textarea>
+
+
+            <input
+                type="text"
+                id="eventCategory"
+                placeholder="Category"
+                required
+            >
+
+
+            <label>Event Date</label>
+
+            <input
+                type="date"
+                id="eventDate"
+                required
+            >
+
+
+            <input
+                type="text"
+                id="eventTime"
+                placeholder="Time e.g. 10:00 AM"
+                required
+            >
+
+
+            <input
+                type="text"
+                id="eventVenue"
+                placeholder="Venue"
+                required
+            >
+
+
+            <input
+                type="number"
+                id="maxParticipants"
+                placeholder="Maximum Participants"
+                min="1"
+                required
+            >
+
+
+            <label>
+                Registration Deadline
+            </label>
+
+            <input
+                type="date"
+                id="registrationDeadline"
+                required
+            >
+
+
+            <button type="submit">
+                Save Event
+            </button>
+
+
+            <button
+                type="button"
+                id="cancelEventButton"
+            >
+                Cancel
+            </button>
+
+        </form>
+
+
+        <p id="eventMessage"></p>
+
+
+        <div
+            id="adminEventsContainer"
+            class="event-container"
+        >
+
+            <p>Loading events...</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- REGISTRATIONS -->
+
+    <section>
+
+        <h2>Student Registrations</h2>
+
+        <div id="registrationsContainer">
+
+            <p>Loading registrations...</p>
+
+        </div>
+
+    </section>
+
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Event Management System
+    </p>
+
+</footer>
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>c

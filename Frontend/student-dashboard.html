@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | Event Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Student Dashboard</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="student-dashboard.html">My Events</a>
+
+        <button type="button" id="logoutButton">
+            Logout
+        </button>
+    </nav>
+
+
+    <main>
+
+        <section class="student-dashboard">
+
+            <h2>
+                Welcome,
+                <span id="studentName">Student</span>
+            </h2>
+
+            <p>
+                View and manage your event registrations.
+            </p>
+
+
+            <div class="dashboard-summary">
+
+                <div class="summary-card">
+                    <h3>Total Registrations</h3>
+                    <h2 id="totalRegistrations">0</h2>
+                </div>
+
+                <div class="summary-card">
+                    <h3>Active Registrations</h3>
+                    <h2 id="activeRegistrations">0</h2>
+                </div>
+
+                <div class="summary-card">
+                    <h3>Cancelled</h3>
+                    <h2 id="cancelledRegistrations">0</h2>
+                </div>
+
+            </div>
+
+
+            <h2>My Registered Events</h2>
+
+            <div id="myEventsContainer" class="event-container">
+
+                <p>Loading your events...</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Event Management System</p>
+    </footer>
+
+
+    <script src="js/student-dashboard.js"></script>
+
+</body>
+
+</html>
